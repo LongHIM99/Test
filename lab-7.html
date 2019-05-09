@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="First page of NIPTICT"/>
+	<meta name="author" content="HIM SOKLONG"/>
+	<meta name="Keywords" content="html,Keyword,niptict"/>
+	<title>lab-7</title>
+</head>
+<body>
+	<table bgcolor="red" width="100%" >
+		<tr>
+			<td height="10%">
+				<h1 style="color: white;" align="center">Bill</h1>
+			</tr>
+		</td>
+	</table>
+	<form action="index.php" method="post" id="form1" >
+		<fieldset>
+			<legend>Order Form</legend>
+			<table align="center">
+				<tr>
+					<td>
+						<form>
+							<fieldset style="background: #979797;">
+								<legend align="right">Shipping Address</legend>
+								<table>
+									<tr>
+										<td align="right">Name:&emsp;</td>
+										<td colspan="3" ><input style="width: 100%;" autofocus type="text" name="name" maxlength="30" size="65" required minlength="5"></td>
+										
+									</tr>
+									<tr>
+										<td align="right">Address:&emsp;</td>
+										<td colspan="3" ><input style="width: 100%;" autofocus type="text" name="address" maxlength="30" size="65" required minlength="5"></td>
+										
+									</tr>
+									<tr>
+										<td align="right">Province:&emsp;</td>
+										<td >
+											<select name="province" style="width: 100%;">
+												<optgroup label="Province">
+													<option value="Phnom Phen">Phnom Phen</option>
+													<option value="Kampong Cham">Kampong Cham</option>
+													<option value="Kamponspeu">Kamponspeu</option>
+												</optgroup>
+												<optgroup label="City">
+													<option value="Phnom Phen">Phnom Phen</option>
+													<option value="Kampong Cham">Kampong Cham</option>
+													<option value="Chbar Mon">Chbar Mon</option>
+												</optgroup>
+											</select>
+										</td>
+										<td align="right">Zip Code:&emsp;</td>
+										<td ><input style="width: 100%;" autofocus type="text" pattern="[0-9]{5}" name="zip_code" size="28" required></td> 
+									</tr>
+									<tr>
+										<td align="right">Tel:&emsp;</td>
+										<td ><input style="width: 100%;" autofocus type="text" pattern="[0-9]{9-10}" name="telephone" size="15" required></td>
+										<td align="right">Email:&emsp;</td>
+										<td ><input style="width: 100%;" type="email" name="email" size="28" required></td>
+									</tr>
+								</table>
+							</fieldset>
+						</form>
+					</td>
+					<td>
+						<form>
+							<fieldset style="background: yellow;">
+								<legend align="left">Billing Address</legend>
+								<table>
+									<tr>
+										<td align="right">Name:&emsp;</td>
+										<td colspan="3" style="width: 100%;"><input style="width: 100%;" autofocus type="text" name="name" maxlength="30" size="65" required minlength="5"></td>
+										
+									</tr>
+									<tr>
+										<td align="right">Address:&emsp;</td>
+										<td colspan="3" ><input style="width: 100%;" autofocus type="text" name="address" maxlength="30" size="65" required minlength="5"></td>
+										
+									</tr>
+									<tr>
+										<td align="right">Province:&emsp;</td>
+										<td >
+											<select name="province" style="width: 100%;">
+												<optgroup label="Province">
+													<option value="Phnom Phen">Phnom Phen</option>
+													<option value="Kampong Cham">Kampong Cham</option>
+													<option value="Kamponspeu">Kamponspeu</option>
+												</optgroup>
+												<optgroup label="City">
+													<option value="Phnom Phen">Phnom Phen</option>
+													<option value="Kampong Cham">Kampong Cham</option>
+													<option value="Chbar Mon">Chbar Mon</option>
+												</optgroup>
+											</select>
+										</td>
+										<td align="right">Zip Code:&emsp;</td>
+										<td ><input style="width: 100%;" autofocus type="text" pattern="[0-9]{5}" name="zip_code" size="28" required></td> 
+									</tr>
+									<tr>
+										<td align="right">Tel:&emsp;</td>
+										<td ><input style="width: 100%;" autofocus type="text" pattern="[0-9]{9-10}" name="telephone" size="15" required></td>
+										<td align="right">Email:&emsp;</td>
+										<td ><input style="width: 100%;" type="email" name="email" size="28" required></td>
+									</tr>
+								</table>
+							</fieldset>
+						</form>
+					</td>
+					<td>
+						
+					</td>
+				</tr>
+				
+			</table>
+			<br>
+			<table bgcolor="blue" width="99%" align="center"><tr><td height="10%"><h1 style="color: white;">Products to Order</h1></tr></td></table>
+			<br>
+			<table align="center" border="2" width="500">
+				<tr>
+					<th>Item</th>
+					<th>Ouantity</th>
+					<th>Repeat Order</th>
+					<th>Price</th>
+					<th>Ext. Cost</th>
+				</tr>
+				<tr>
+					<td><input type="text" name="item" value="" size="20"></td>
+					<td>
+						<select>
+							<optgroup label="Select Quantity">
+								<option value="item 1 kg">1 kg</option>
+								<option value="item 2 kg">2 kg</option>
+								<option value="item 3 kg">3 kg</option>
+								<option value="item 4 kg">4 kg</option>
+							</optgroup>
+						</select>
+					</td>
+					<td><input type="checkbox" name="repeat_order"></td>
+					<td><input type="text" name="price" value="14.3" size="15"></td>
+					<td><input type="text" name="Ext.cost" value="" size="25"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="item" value="" size="20"></td>
+					<td>
+						<select>
+							<optgroup label="Select Quantity">
+								<option value="item 1 kg">1 kg</option>
+								<option value="item 2 kg">2 kg</option>
+								<option value="item 3 kg">3 kg</option>
+								<option value="item 4 kg">4 kg</option>
+							</optgroup>
+						</select>
+					</td>
+					<td><input type="checkbox" name="repeat_order"></td>
+					<td><input type="text" name="price" value="" size="15"></td>
+					<td><input type="text" name="Ext.cost" value="" size="25"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="item" value="" size="20"></td>
+					<td>
+						<select>
+							<optgroup label="Select Quantity">
+								<option value="item 1 kg">1 kg</option>
+								<option value="item 2 kg">2 kg</option>
+								<option value="item 3 kg">3 kg</option>
+								<option value="item 4 kg">4 kg</option>
+							</optgroup>
+						</select>
+					</td>
+					<td><input type="checkbox" name="repeat_order"></td>
+					<td><input type="text" name="price" value="" size="15"></td>
+					<td><input type="text" name="Ext.cost" value="" size="25"></td>
+				</tr>
+				<tr>
+					<td colspan="4" align="right"><h0>Tax</h0></td>
+					<td><input type="text" name="Ext.cost" value="" size="25"></td>
+				</tr>
+				<tr>
+					<td colspan="4" align="right">
+						<h0>Shopping Mode</h0>
+						<input list="shopping" name="shoppingselect" size="7" value="Ship" required>
+							<datalist id="shopping">
+								<option value="Shopping mode by Ship">Ship</option>
+								<option value="Shopping mode by Ariplan">Ariplan</option>
+								<option value="Shopping mode by Truck">Truck</option>
+							</datalist>
+					</td>
+					</td>
+					<td><input type="text" name="Ext.cost" value="" size="25"></td>
+				</tr>
+				<tr>
+					<td colspan="4" align="right"><h0>Total</h0></td>
+					<td><input type="text" name="Ext.cost" value="" size="25"></td>
+				</tr>
+			</table>	
+			
+		</fieldset>
+
+
+	</form>
+	<button type="submit" form="form1" value="Submit">Submit</button>
+	<button type="reset" form="form1" value="Reset">Reset</button>
+
+</body>
+</html>
